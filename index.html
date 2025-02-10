@@ -24,33 +24,13 @@
 </head>
 <body>
 <header>
-  <section id="navBar" class="mx-10">
+
+  <!-- nav for lg device -->
+  <section id="navBar" class="hidden mx-10 lg:block">
     <div class="navbar bg-base-100">
       <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Product</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact Us</a></li>
-          </ul>
-        </div>
-        <a href="home"><img class="w-36 h-14" src="c2-assets/logo-header.png" alt="logo"></a>
+        <a href="home"><img class="hidden lg:block w-36 h-14" src="c2-assets/logo-header.png" alt="logo"></a>
+        
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-sm">
@@ -60,14 +40,43 @@
         </ul>
       </div>
       <div class="navbar-end gap-6">
-        <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        <button class="btn btn-outline px-6 border-green-600 border-2">Login</button>
-        <button class="btn btn-outline px-6 bg-green-600 border-0 text-white">Login</button>
+        <a href="search"><i class="fa-solid fa-magnifying-glass hidden lg:block"></i></a>
+        <a href="cart"><i class="fa-solid fa-cart-shopping hidden lg:block"></i></a>
+        <button class="btn btn-outline px-6 border-green-600 border-2 hidden lg:block">Login</button>
+        <button class="btn btn-outline px-6 bg-green-600 border-0 text-white hidden lg:block">Login</button>
       </div>
     </div>
   </section>
 
+  <!-- nav for sm device -->
+  <section class="lg:hidden mx-5 flex justify-between">
+    <a href="home">
+      <img class="lg:hidden w-10 h-10" src="c2-assets/smLogo.png" alt="logo">
+    </a>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow absolute right-8">
+        <li><a>Product</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+  </section>
   
 
 </header>
