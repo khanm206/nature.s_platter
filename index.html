@@ -44,8 +44,8 @@
       <div class="navbar-end gap-6">
         <a href="search"><i class="fa-solid fa-magnifying-glass hidden lg:block"></i></a>
         <a href="cart"><i class="fa-solid fa-cart-shopping hidden lg:block"></i></a>
-        <button class="btn btn-outline px-6 border-green-600 border-2 hidden lg:block">Login</button>
-        <button class="btn btn-outline px-6 bg-green-600 border-0 text-white hidden lg:block">Register</button>
+        <button class="btn btn-outline px-6 border-[#179800] border-2 hidden lg:block">Login</button>
+        <button class="btn btn-outline px-6 bg-[#179800] border-0 text-white hidden lg:block">Register</button>
       </div>
     </div>
   </section>
@@ -59,10 +59,11 @@
       <div tabindex="0" role="button" class="btn btn-ghost">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
+          class="h-5 w-5 text-green-600"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor">
+          stroke="currentColor"
+        >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -72,7 +73,7 @@
       </div>
       <ul
         tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow absolute right-8">
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow w-32 absolute right-8">
         <li><a>Product</a></li>
         <li><a>Services</a></li>
         <li><a>Contact Us</a></li>
@@ -81,11 +82,11 @@
   </section>
   
   <!-- hero section -->
-<section id="hero" class="lg:my-20 my-10 bg-gradient-to-t from-[#EFEBE3] via-[#EFEBE3] to-white">
+<section id="hero" class="lg:my-20 mt-10 bg-gradient-to-t from-[#EFEBE3] via-[#EFEBE3] to-white">
 
 <div class="heroContent text-center mx-5 lg:mx-0">
   <h1 class="text-4xl lg:text-6xl font-semibold">
-Freshness <span class="text-green-600">You Can <br>
+Freshness <span class="text-[#179800]">You Can <br>
   Count</span> On, Prices You’ll Love!
   </h1>
   <p class="text-xl font-normal mt-10 mx-auto lg:w-3/6">
@@ -99,5 +100,67 @@ Freshness <span class="text-green-600">You Can <br>
 
 
 </header>
+
+<main>
+
+  <!-- service section -->
+  <section id="services" class="mx-10 lg:mt-36 mt-12">
+    <h2 class="text-3xl font-semibold text-[rgb(23,152,0)] mb-5 lg:mb-10">Services</h2>
+
+    <div id="cards" class="flex flex-col lg:flex-row gap-5">
+      
+      <div id="card01" class="card bg-[#EFEBE3] p-8 w-fit">
+
+        <div  class="rounded-[100px] bg-white w-fit p-8 m-auto">
+          <img class="w-32 m-auto"
+          src="c2-assets/service.png"
+          alt="services"
+           />
+        </div>
+
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">24/7 Services</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus facilis veritatis rem, optio numquam odit eius! Ab, praesentium quo, tenetur odit eos modi porro non quas nobis dolores cupiditate.</p>
+        </div>
+      </div>
+
+      <div id="card02" class="card bg-[#EFEBE3] p-8 w-fit">
+
+        <div  class="rounded-[100px] bg-white w-fit p-8 m-auto">
+          <img class="w-32 m-auto"
+          src="c2-assets/delivery.png"
+          alt="delivery"
+           />
+        </div>
+
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Fast Delivery</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus facilis veritatis rem, optio numquam odit eius! Ab, praesentium quo, tenetur odit eos modi porro non quas nobis dolores cupiditate.</p>
+        </div>
+      </div>
+
+      <div id="card03" class="card bg-[#EFEBE3] p-8 w-fit">
+
+        <div  class="rounded-[100px] bg-white w-fit p-8 m-auto">
+          <img class="w-32 m-auto"
+          src="c2-assets/healthy.png"
+          alt="products"
+           />
+        </div>
+
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Healthy Products</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus facilis veritatis rem, optio numquam odit eius! Ab, praesentium quo, tenetur odit eos modi porro non quas nobis dolores cupiditate.</p>
+        </div>
+      </div>
+
+
+    </div>
+    
+  </section>
+
+
+</main>
+
 </body>
 </html>
